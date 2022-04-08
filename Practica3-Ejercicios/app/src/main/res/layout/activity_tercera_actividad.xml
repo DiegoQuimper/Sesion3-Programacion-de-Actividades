@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/fondo3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="Conversor de Divisas"
+            android:textColor="#000000"
+
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="310dp"
+        android:layout_gravity="center"
+        android:background="@drawable/fondo3"
+        android:orientation="vertical"
+        android:textColor="#FFFFFF">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Ingresa la cantidad: "
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/divisa_a_ser_convertida"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#000000"
+            android:inputType="numberSigned|number|numberDecimal"
+            android:textColor="#000000"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#E4DEDE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="De : "
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/convertir_de"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="A  "
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/convertir_a"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:backgroundTint="#771414"
+        android:text="Convertir"
+        tools:layout_editor_absoluteX="dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <LinearLayout
+
+        android:layout_width="311dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:background="@drawable/fondo3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/divisa_convertida"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#000000"
+            android:hint="Resultado"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000" />
+    </LinearLayout>
+
+</LinearLayout>
